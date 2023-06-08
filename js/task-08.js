@@ -7,7 +7,7 @@ formEl.addEventListener("submit", (e) => {
         alert("Не всі поля заповнені");
     }
     else {
-        profile.email = e.target.elements.email;;
+        profile.email = e.target.elements.email.value;;
         profile.password = e.target.elements.password.value;
         console.log(profile);
         formEl.reset();
